@@ -1,14 +1,15 @@
 export const mockCards = {
     cards: [
-        {title: "NFT 1", id: "ID of NFT", image: "NFT 1.PNG", category: "Category of NFT", },
-        {title: "NFT 2", id: "ID of NFT", image: "NFT 2.PNG", category: "Category of NFT"},
-        {title: "NFT 3", id: "ID of NFT", image: "NFT 3.PNG", category: "Category of NFT"},
-        {title: "NFT 4", id: "ID of NFT", image: "NFT 4.PNG", category: "Category of NFT"},
-        {title: "NFT 5", id: "ID of NFT", image: "NFT 5.PNG", category: "Category of NFT"},
-        {title: "NFT 6", id: "ID of NFT", image: "NFT 6.PNG", category: "Category of NFT"},
-        {title: "NFT 7", id: "ID of NFT", image: "NFT 7.PNG", category: "Category of NFT"},
-        {title: "NFT 8", id: "ID of NFT", image: "NFT 8.PNG", category: "Category of NFT"},
-        {title: "NFT 9", id: "ID of NFT", image: "NFT 9.PNG", category: "Category of NFT"}
+        {title: "CryptoGreen", id: "#5430", image: "CryptoGreen.png", category: "Owl", rarity: "Common", size: "1:1", price: 1.01},
+        {title: "CryptoDrip", id: "#5403", image: "CryptoDrip.png", category: "Cat", rarity: "Rare", size: "1:1", price: 2.39 },
+        {title: "CryptoKitties", id: "#0039", image: "CryptoKitties.png", category: "Cat", rarity: "Common", size: "1:1", price: 30.2},
+        {title: "CryptoShock", id: "#0023", image: "CryptoShock.png", category: "Human", rarity: "Common", size: "1:1", price: 0.0039},
+        {title: "CryptoPirate", id: "#4399", image: "CryptoPirate.png", category: "Owl", rarity: "Common", size: "1:1", price: 0.0043},
+        {title: "CryptoOwl", id: "#2134", image: "CryptoOwl.png", category: "Owl", rarity: "Rare", size: "1:1", price: 1.2},
+        {title: "CryptoPirate", id: "#4399", image: "CryptoPirate.png", category: "Owl", rarity: "Common", size: "1:1", price: 9.39},
+        {title: "CryptoBath", id: "#431403", image: "CryptoBath.png", category: "Ape", rarity: "Rare", size: "1:1", price: 32.1},
+        {title: "ClassicApe", id: "#431404", image: "ClassicApe.png", category: "Ape", rarity: "Rare", size: "1:1", price: 33.39},
+        {title: "BoredApe", id: "#431405", image: "BoredApe.png", category: "Ape", rarity: "Common", size: "1:1", price: 40.08},
     ]
 }
 
