@@ -1,4 +1,18 @@
-export const mockCards = {
+export type Card = {
+  title: string;
+  id: string;
+  image: string;
+  category: string;
+  rarity: string;
+  size: string;
+  price: number;
+};
+
+export type Cards = {
+  cards: Array<Card>;
+};
+
+export const mockCards: Cards = {
   cards: [
     {
       title: "CryptoGreen",
