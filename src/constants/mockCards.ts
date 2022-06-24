@@ -17,7 +17,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoGreen",
       id: "#5430",
-      image: "CryptoGreen.png",
+      image: ".././assets/CryptoGreen.png",
       category: "Owl",
       rarity: "Common",
       size: "1:1",
@@ -26,7 +26,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoDrip",
       id: "#5403",
-      image: "CryptoDrip.png",
+      image: ".././assets/CryptoDrip.png",
       category: "Cat",
       rarity: "Rare",
       size: "1:1",
@@ -35,7 +35,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoKitties",
       id: "#0039",
-      image: "CryptoKitties.png",
+      image: ".././assets/CryptoKitties.png",
       category: "Cat",
       rarity: "Common",
       size: "1:1",
@@ -44,7 +44,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoShock",
       id: "#0023",
-      image: "CryptoShock.png",
+      image: ".././assets/CryptoShock.png",
       category: "Human",
       rarity: "Common",
       size: "1:1",
@@ -53,7 +53,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoPirate",
       id: "#4399",
-      image: "CryptoPirate.png",
+      image: ".././assets/CryptoPirate.png",
       category: "Owl",
       rarity: "Common",
       size: "1:1",
@@ -62,7 +62,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoOwl",
       id: "#2134",
-      image: "CryptoOwl.png",
+      image: ".././assets/CryptoOwl.png",
       category: "Owl",
       rarity: "Rare",
       size: "1:1",
@@ -71,7 +71,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoPirate",
       id: "#4399",
-      image: "CryptoPirate.png",
+      image: ".././assets/CryptoPirate.png",
       category: "Owl",
       rarity: "Common",
       size: "1:1",
@@ -80,7 +80,7 @@ export const mockCards: Cards = {
     {
       title: "CryptoBath",
       id: "#431403",
-      image: "CryptoBath.png",
+      image: ".././assets/CryptoBath.png",
       category: "Ape",
       rarity: "Rare",
       size: "1:1",
@@ -89,7 +89,7 @@ export const mockCards: Cards = {
     {
       title: "ClassicApe",
       id: "#431404",
-      image: "ClassicApe.png",
+      image: ".././assets/ClassicApe.png",
       category: "Ape",
       rarity: "Rare",
       size: "1:1",
@@ -98,7 +98,7 @@ export const mockCards: Cards = {
     {
       title: "BoredApe",
       id: "#431405",
-      image: "BoredApe.png",
+      image: ".././assets/BoredApe.png",
       category: "Ape",
       rarity: "Common",
       size: "1:1",
