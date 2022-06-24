@@ -1,6 +1,7 @@
 import React from "react";
 
 import CardStack from "./components/CardStack";
+import Header from "./components/Header";
 import "./global.less";
 
 /**
@@ -9,6 +10,7 @@ import "./global.less";
 const App = () => {
   return (
     <div className="app-container">
+      <Header />
       <CardStack />
     </div>
   );

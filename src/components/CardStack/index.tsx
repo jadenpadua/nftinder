@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
 import { Card, mockCards } from "../../constants/mockCards";
+import { Typography } from "@mui/material";
 
 import "./styles.less";
 
@@ -71,7 +72,12 @@ const CardStack = () => {
               transform: interpolate([rot, scale], trans),
               backgroundImage: `url(${cards[i].image})`,
             }}
-          />
+          >
+            {/* Do flexbox stuff in here  */}
+            <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
+              {cards[i].title}
+            </Typography>
+          </animated.div>
         </animated.div>
       ))}
     </>
