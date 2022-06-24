@@ -16,7 +16,6 @@
 .card-container {
   width: 50%;
 }
-
 .container {
     background: lightblue;
     cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
@@ -39,6 +38,8 @@
     background-size: auto 45%;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
     width: 45vh;
     max-width: 350px;
     height: 85vh;
@@ -47,4 +48,32 @@
     border-radius: 10px;
     box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
   }
+
+  //Styling for card container
+  .deck > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: space-between;
+  }
+
+  .bubble {
+    height: 50px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px
+  }
+
+  .bubbles-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
   
