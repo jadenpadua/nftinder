@@ -1,12 +1,15 @@
 import { ReactNode } from "react";
 import React, { createContext, useReducer } from "react";
+import { Card, mockCards } from "../constants/mockCards";
 
 export type AppState = {
   cardsRemaining: number;
+  cards: Array<Card>;
 };
 
 const initialState: AppState = {
   cardsRemaining: 9,
+  cards: mockCards.cards,
 };
 
 export type Action = {
