@@ -21,14 +21,16 @@ const Header: React.FunctionComponent = () => {
         </Typography>
       </div>
 
-      <Typography
-        variant="h4"
-        gutterBottom
-        component="div"
-        sx={{ fontWeight: "bold" }}
-      >
-        {state.cardsRemaining} cards remaining
-      </Typography>
+      {state.gameState === "cardScreen" ? (
+        <Typography
+          variant="h4"
+          gutterBottom
+          component="div"
+          sx={{ fontWeight: "bold" }}
+        >
+          {state.cardsRemaining} cards remaining
+        </Typography>
+      ) : null}
     </div>
   );
 };

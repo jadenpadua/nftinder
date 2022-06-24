@@ -3,11 +3,13 @@ import React, { createContext, useReducer } from "react";
 import { Card, mockCards } from "../constants/mockCards";
 
 export type AppState = {
+  gameState: string;
   cardsRemaining: number;
   cards: Array<Card>;
 };
 
 const initialState: AppState = {
+  gameState: "cardScreen",
   cardsRemaining: 9,
   cards: mockCards.cards,
 };
