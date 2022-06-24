@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Typography } from "@mui/material";
 import "./styles.less";
+import { AppContext } from "../../context/AppContext";
 
 /**
  * @description: Entrypoint of our application
  */
-const Header = () => {
+const Header: React.FunctionComponent = () => {
+  const { state } = useContext(AppContext);
   return (
     <div className="header-container">
       <div className="flex-2">
@@ -25,7 +27,7 @@ const Header = () => {
         component="div"
         sx={{ fontWeight: "bold" }}
       >
-        4 cards remaining
+        {state.cardsRemaining} cards remaining
       </Typography>
     </div>
   );

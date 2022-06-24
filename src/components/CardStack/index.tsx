@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useSprings, animated, to as interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
 import { Card, mockCards } from "../../constants/mockCards";
+import { AppContext } from "../../context/AppContext";
 import { Typography } from "@mui/material";
 
 import "./styles.less";
@@ -24,6 +25,7 @@ const trans = (r: number, s: number) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 const CardStack = () => {
+  const { dispatch } = useContext(AppContext);
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
@@ -36,6 +38,7 @@ const CardStack = () => {
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
       if (!down && trigger) {
         gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
+        dispatch({ type: "decCard" });
       }
 
       api.start((i) => {
@@ -56,6 +59,7 @@ const CardStack = () => {
         setTimeout(() => {
           gone.clear();
           api.start((i) => to(i));
+          dispatch({ type: "resetCards" });
         }, 600);
     }
   );
