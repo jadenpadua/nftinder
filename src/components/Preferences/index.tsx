@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useContext } from "react";
 import "./styles.less";
 import cards from "../../asset/cards.png";
 import { Typography } from "@mui/material";
@@ -8,8 +8,15 @@ import { Checkbox } from '@mui/material';
 import { FormControl } from '@mui/material';
 import { InputLabel } from '@mui/material';
 import { OutlinedInput } from '@mui/material';
+import {Button,Box} from "@mui/material";
+import { AppContext } from "../../context/AppContext";
 
 const Preferences: React.FunctionComponent = () => {
+  const { dispatch } = useContext(AppContext);
+  const onClick = () => 
+  {
+    dispatch({ type: "switchGameState",payload: "cardScreen" });
+  }
   return (
     <>
       <div className="pref-container">
@@ -45,6 +52,23 @@ const Preferences: React.FunctionComponent = () => {
                     label="Name"/>
                 </FormControl>
             </div>
+            <Box textAlign='center'>
+               <Button 
+                type="submit"
+                variant="outlined"
+                style={{ width: "18em", height: "3em", marginTop: "2%" }}
+                sx={{
+                  borderRadius: 5,
+                  border: "solid black 0.25em",
+                  fontSize: 20,
+                  alignItems:"center",
+                  color: "black",
+                  fontFamily: "MonumentExtended-Regular",
+                }}
+                onClick = {onClick}
+              >Begin</Button>
+            </Box>
+            
         </div>
         <img src={cards} width="850" height="850" alt="" />
       </div>

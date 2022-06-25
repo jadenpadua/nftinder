@@ -10,7 +10,7 @@ export type AppState = {
 };
 
 const initialState: AppState = {
-  gameState: "results",
+  gameState: "splash",
   cardsRemaining: 9,
   cards: mockCards.cards,
   swipeRights: [],
@@ -49,12 +49,17 @@ const appReducer = (state: AppState, action: Action): AppState => {
           cardsRemaining: state.cardsRemaining - 1,
         };
       }
+
+    case "resetCards":
+      return {
+        ...state,
+        cardsRemaining: 9,
+      };
     case "switchGameState":
       return {
         ...state,
         gameState: action.payload,
       };
-
     default:
       return state;
   }
