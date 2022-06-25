@@ -12,10 +12,10 @@ const Header: React.FunctionComponent = () => {
     <div className="header-container">
       <div className="flex-2">
         <Typography
-          variant="h4"
+          variant="h5"
           gutterBottom
           component="div"
-          sx={{ fontWeight: "bold" }}
+          sx={{ fontWeight: "bold", fontFamily: "MonumentExtended-Regular" }}
         >
           nfTIND
         </Typography>
@@ -23,10 +23,10 @@ const Header: React.FunctionComponent = () => {
 
       {state.gameState === "cardScreen" ? (
         <Typography
-          variant="h4"
+          variant="h5"
           gutterBottom
           component="div"
-          sx={{ fontWeight: "bold" }}
+          sx={{ fontWeight: "bold", fontFamily: "MonumentExtended-Regular" }}
         >
           {state.cardsRemaining} cards remaining
         </Typography>
