@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import CardStack from "./components/CardStack";
 import Header from "./components/Header";
 import Splash from "./components/Splash";
+import Preferences from "./components/Preferences";
 import { AppContext } from "./context/AppContext";
 import "./global.less";
 
@@ -21,6 +22,9 @@ const App = () => {
       break;
     case "splash":
       content = <Splash />;
+      break;
+    case "pref":
+      content = <Preferences/>;
       break;
     default:
       content = <CardStack />;
