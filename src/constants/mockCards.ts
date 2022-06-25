@@ -24,6 +24,15 @@ export const mockCards: Cards = {
       price: 1.01,
     },
     {
+      title: "BoredApe",
+      id: "#431405",
+      image: require("../asset/BoredApe.png"),
+      category: "Ape",
+      rarity: "Common",
+      size: "1:1",
+      price: 40.08,
+    },
+    {
       title: "CryptoDrip",
       id: "#5403",
       image: require("../asset/CryptoDrip.png"),
@@ -31,15 +40,6 @@ export const mockCards: Cards = {
       rarity: "Rare",
       size: "1:1",
       price: 2.39,
-    },
-    {
-      title: "CryptoKitties",
-      id: "#0039",
-      image: require(".././asset/CryptoKitties.png"),
-      category: "Cat",
-      rarity: "Common",
-      size: "1:1",
-      price: 30.2,
     },
     {
       title: "CryptoShock",
@@ -50,6 +50,16 @@ export const mockCards: Cards = {
       size: "1:1",
       price: 0.0039,
     },
+    {
+      title: "ClassicApe",
+      id: "#431404",
+      image: require("../asset/ClassicApe.png"),
+      category: "Ape",
+      rarity: "Rare",
+      size: "1:1",
+      price: 33.39,
+    },
+
     {
       title: "CryptoOwl",
       id: "#2134",
@@ -77,23 +87,15 @@ export const mockCards: Cards = {
       size: "1:1",
       price: 32.1,
     },
+
     {
-      title: "ClassicApe",
-      id: "#431404",
-      image: require("../asset/ClassicApe.png"),
-      category: "Ape",
-      rarity: "Rare",
-      size: "1:1",
-      price: 33.39,
-    },
-    {
-      title: "BoredApe",
-      id: "#431405",
-      image: require("../asset/BoredApe.png"),
-      category: "Ape",
+      title: "CryptoKitties",
+      id: "#0039",
+      image: require(".././asset/CryptoKitties.png"),
+      category: "Cat",
       rarity: "Common",
       size: "1:1",
-      price: 40.08,
+      price: 30.2,
     },
   ],
 };
