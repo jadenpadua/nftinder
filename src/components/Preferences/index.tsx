@@ -1,7 +1,7 @@
 import React,{ useContext } from "react";
 import "./styles.less";
 import cards from "../../asset/cards.png";
-import { Typography } from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import { FormControlLabel } from '@mui/material';
 import { FormGroup } from '@mui/material';
 import { Checkbox } from '@mui/material';
@@ -45,11 +45,12 @@ const Preferences: React.FunctionComponent = () => {
                 Price Range
             </Typography>
             <div className="price-range-textboxes">
-                <FormControl sx={{ width: 100, height: 30 }}>
-                    <InputLabel htmlFor="component-outlined"><Typography sx={{fontFamily: "MonumentExtended-Regular"}}>Min</Typography></InputLabel>
-                    <OutlinedInput
-                    id="component-outlined"
-                    label="Name"/>
+                <FormControl sx={{ paddingLeft: 2}}>
+                    <TextField type="search" sx={{ width: 100, height: 30 }}label={<Typography sx={{ fontFamily: "MonumentExtended-Regular"}}>Min</Typography>}></TextField>
+                </FormControl>
+                <Typography sx={{ fontFamily: "MonumentExtended-Regular", fontSize: 20, marginTop: 4, paddingLeft: 2}}>to</Typography>
+                <FormControl sx={{ width: 100, height: 30, paddingLeft: 2}}>
+                    <TextField type="search" label={<Typography sx={{ fontFamily: "MonumentExtended-Regular"}}>Max</Typography>}></TextField>
                 </FormControl>
             </div>
             <Box textAlign='center'>
