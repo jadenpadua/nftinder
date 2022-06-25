@@ -1,6 +1,6 @@
 import React,{ useContext } from "react";
 import "./styles.less";
-import cards from "../../asset/cards.png";
+import cards from "../../asset/Preferences-image.png";
 import { TextField, Typography } from "@mui/material";
 import { FormControlLabel } from '@mui/material';
 import { FormGroup } from '@mui/material';
