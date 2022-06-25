@@ -10,7 +10,8 @@ const Splash: React.FunctionComponent = () => {
             variant="h1"
             gutterBottom
             component="div"
-            sx={{ fontWeight: "bold" }}
+            sx={{ fontWeight: "bold",
+            fontFamily: "MonumentExtended-Regular", }}
           >
             Find Your 
           </Typography>
@@ -20,21 +21,24 @@ const Splash: React.FunctionComponent = () => {
             variant="h1"
             gutterBottom
             component="div"
-            sx={{ fontWeight: "bold" }}
+            sx={{ fontWeight: "bold",
+            fontFamily: "MonumentExtended-Regular", }}
           >
             Perfect NFT
           </Typography>
         </div>
-        <div className="flex-3">
-            <Button 
+        <Button 
             type="submit"
-            color ="secondary"
             variant ="outlined"
-            style={{maxWidth: '27em', maxHeight: '6em', minWidth: '27em', minHeight: '6em'}}
-            sx={ { borderRadius: 5 } }
+            style={{maxWidth: '13em', minWidth: '9em'}}
+            sx={ { 
+                borderRadius: 5 ,
+                border: "solid black 0.25em",
+                fontSize: 30,
+                color: "black",
+                fontFamily: "MonumentExtended-Regular",} 
+            }
             >Start Demo</Button>
-        </div>
-        
       </div>
     );
   };
