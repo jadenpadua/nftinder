@@ -45,20 +45,34 @@ const Preferences: React.FunctionComponent = () => {
                 Price Range
             </Typography>
             <div className="price-range-textboxes">
-                <FormControl sx={{ width: 100, height: 30 }}>
+                <FormControl sx={{ width: 100, height: 10}}>
                     <InputLabel htmlFor="component-outlined"><Typography sx={{fontFamily: "MonumentExtended-Regular"}}>Min</Typography></InputLabel>
                     <OutlinedInput
                     id="component-outlined"
                     label="Name"/>
                 </FormControl>
             </div>
+            <div className="categoryTitle">
+            <Typography variant="h5" gutterBottom component={"div"}
+                sx={{paddingLeft: 2, paddingTop: 2, fontFamily: "MonumentExtended-Regular", fontSize: 25}}>
+                Categories
+            </Typography>
+            </div>
+            <Box className= "categorySearch" textAlign='center'> 
+            <FormControl sx={{ width: 350, height: 52}}>
+                    <InputLabel htmlFor="component-outlined"><Typography sx={{fontFamily: "MonumentExtended-Regular"}}>Min</Typography></InputLabel>
+                    <OutlinedInput
+                    id="component-outlined"
+                    label="Name"/>
+                </FormControl>
+            </Box>
             <Box textAlign='center'>
                <Button 
                 type="submit"
                 variant="outlined"
                 style={{ width: "18em", height: "3em", marginTop: "2%" }}
                 sx={{
-                  borderRadius: 5,
+                  borderRadius: 3,
                   border: "solid black 0.25em",
                   fontSize: 20,
                   alignItems:"center",
