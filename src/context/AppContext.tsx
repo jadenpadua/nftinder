@@ -10,7 +10,7 @@ export type AppState = {
 };
 
 const initialState: AppState = {
-  gameState: "cardScreen",
+  gameState: "results",
   cardsRemaining: 9,
   cards: mockCards.cards,
   swipeRights: [],

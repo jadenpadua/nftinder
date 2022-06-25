@@ -1,12 +1,15 @@
 import React from "react";
-import cards from "../../asset/cards.png";
+import "./styles.less";
+import CardStack from "../CardStack";
 
 const Results: React.FunctionComponent = () => {
   return (
     <>
-      <div className="pref-container">
-        <div className="pref-card">Results</div>
-        <img src={cards} width="850" height="850" alt="" />
+      <div className="res-container">
+        <div className="res-card">Results</div>
+        <div className="card-stack-container">
+          <CardStack />
+        </div>
       </div>
     </>
   );
