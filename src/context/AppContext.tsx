@@ -10,7 +10,7 @@ export type AppState = {
 };
 
 const initialState: AppState = {
-  gameState: "pref",
+  gameState: "cardScreen",
   cardsRemaining: 9,
   cards: mockCards.cards,
   swipeRights: [],
@@ -49,18 +49,12 @@ const appReducer = (state: AppState, action: Action): AppState => {
           cardsRemaining: state.cardsRemaining - 1,
         };
       }
-
-    case "resetCards":
+    case "switchGameState":
       return {
         ...state,
-        cardsRemaining: 9,
+        gameState: action.payload,
       };
-    case "switchGameState":
-      console.log("Running in context")
-        return{
-          ...state,
-          gameState:action.payload
-        }
+
     default:
       return state;
   }
