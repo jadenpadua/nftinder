@@ -58,8 +58,8 @@ const CardStack = () => {
         setTimeout(() => {
           gone.clear();
           api.start((i) => to(i));
-          dispatch({ type: "resetCards" });
-        }, 600);
+          dispatch({ type: "switchGameState", payload: "results" });
+        }, 1000);
     }
   );
 

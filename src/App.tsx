@@ -4,6 +4,7 @@ import CardStack from "./components/CardStack";
 import Header from "./components/Header";
 import Splash from "./components/Splash";
 import Preferences from "./components/Preferences";
+import Results from "./components/Results";
 import { AppContext } from "./context/AppContext";
 import "./global.less";
 
@@ -24,7 +25,10 @@ const App = () => {
       content = <Splash />;
       break;
     case "pref":
-      content = <Preferences/>;
+      content = <Preferences />;
+      break;
+    case "results":
+      content = <Results />;
       break;
     default:
       content = <CardStack />;

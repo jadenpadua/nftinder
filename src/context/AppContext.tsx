@@ -56,7 +56,6 @@ const appReducer = (state: AppState, action: Action): AppState => {
         cardsRemaining: 9,
       };
     case "switchGameState":
-      console.log("Running in context")
         return{
           ...state,
           gameState:action.payload
