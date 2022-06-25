@@ -6,12 +6,14 @@ export type AppState = {
   gameState: string;
   cardsRemaining: number;
   cards: Array<Card>;
+  swipeRights: Array<number>;
 };
 
 const initialState: AppState = {
-  gameState: "splash",
+  gameState: "cardScreen",
   cardsRemaining: 9,
   cards: mockCards.cards,
+  swipeRights: [],
 };
 
 export type Action = {
@@ -32,11 +34,22 @@ export const AppContext = createContext<{
 
 const appReducer = (state: AppState, action: Action): AppState => {
   switch (action.type) {
-    case "decCard":
-      return {
-        ...state,
-        cardsRemaining: state.cardsRemaining - 1,
-      };
+    case "cardAction":
+      const { dir, index } = action.payload;
+
+      if (dir === 1) {
+        return {
+          ...state,
+          cardsRemaining: state.cardsRemaining - 1,
+          swipeRights: [...state.swipeRights, index],
+        };
+      } else {
+        return {
+          ...state,
+          cardsRemaining: state.cardsRemaining - 1,
+        };
+      }
+
     case "resetCards":
       return {
         ...state,

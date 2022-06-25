@@ -7,7 +7,6 @@ import Bubbles from "../Bubbles";
 
 import "./styles.less";
 
-
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i: number) => ({
   x: 0,
@@ -38,7 +37,7 @@ const CardStack = () => {
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
       if (!down && trigger) {
         gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
-        dispatch({ type: "decCard" });
+        dispatch({ type: "cardAction", payload: { dir: dir, index: index } });
       }
 
       api.start((i) => {
@@ -77,7 +76,7 @@ const CardStack = () => {
               backgroundImage: `url(${cards[i].image})`,
             }}
           >
-          <Bubbles index={ i }/>
+            <Bubbles index={i} />
           </animated.div>
         </animated.div>
       ))}
