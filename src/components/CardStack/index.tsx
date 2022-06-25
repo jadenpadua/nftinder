@@ -54,12 +54,14 @@ const CardStack = () => {
           config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
-      if (!down && gone.size === cards.length)
+      if (!down && gone.size === cards.length) {
         setTimeout(() => {
           gone.clear();
           api.start((i) => to(i));
           dispatch({ type: "switchGameState", payload: "results" });
+          dispatch({ type: "setCards" });
         }, 1000);
+      }
     }
   );
 

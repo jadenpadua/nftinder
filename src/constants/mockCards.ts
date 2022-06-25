@@ -6,6 +6,7 @@ export type Card = {
   rarity: string;
   size: string;
   price: number;
+  index: number;
 };
 
 export type Cards = {
@@ -22,6 +23,7 @@ export const mockCards: Cards = {
       rarity: "Common",
       size: "1:1",
       price: 1.01,
+      index: 0,
     },
     {
       title: "BoredApe",
@@ -31,6 +33,7 @@ export const mockCards: Cards = {
       rarity: "Common",
       size: "1:1",
       price: 40.08,
+      index: 1,
     },
     {
       title: "CryptoDrip",
@@ -40,6 +43,7 @@ export const mockCards: Cards = {
       rarity: "Rare",
       size: "1:1",
       price: 2.39,
+      index: 2,
     },
     {
       title: "CryptoShock",
@@ -49,6 +53,7 @@ export const mockCards: Cards = {
       rarity: "Common",
       size: "1:1",
       price: 0.0039,
+      index: 3,
     },
     {
       title: "ClassicApe",
@@ -58,6 +63,7 @@ export const mockCards: Cards = {
       rarity: "Rare",
       size: "1:1",
       price: 33.39,
+      index: 4,
     },
 
     {
@@ -68,6 +74,7 @@ export const mockCards: Cards = {
       rarity: "Rare",
       size: "1:1",
       price: 1.2,
+      index: 5,
     },
     {
       title: "CryptoPirate",
@@ -77,6 +84,7 @@ export const mockCards: Cards = {
       rarity: "Common",
       size: "1:1",
       price: 9.39,
+      index: 6,
     },
     {
       title: "CryptoBath",
@@ -86,6 +94,7 @@ export const mockCards: Cards = {
       rarity: "Rare",
       size: "1:1",
       price: 32.1,
+      index: 7,
     },
 
     {
@@ -96,6 +105,7 @@ export const mockCards: Cards = {
       rarity: "Common",
       size: "1:1",
       price: 30.2,
+      index: 8,
     },
   ],
 };

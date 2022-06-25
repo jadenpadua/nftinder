@@ -60,10 +60,19 @@ const appReducer = (state: AppState, action: Action): AppState => {
         ...state,
         gameState: action.payload,
       };
+    case "setCards":
+      const newCards: Array<Card> = mockCards.cards.filter((card: Card) =>
+        state.swipeRights.includes(card.index)
+      );
+      return {
+        ...state,
+        cards: newCards,
+      };
     default:
       return state;
   }
 };
+
 export const AppContextProvider = ({
   children,
 }: {
