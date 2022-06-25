@@ -8,8 +8,7 @@ const Splash: React.FunctionComponent = () => {
   const { dispatch } = useContext(AppContext);
   const onClick = () => 
   {
-    console.log("Hello")
-    dispatch({ type: "switchGameState",payload: "cardScreen" });
+    dispatch({ type: "switchGameState",payload: "pref" });
   }
 
   return (
