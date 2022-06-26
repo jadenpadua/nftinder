@@ -10,7 +10,7 @@ export type AppState = {
 };
 
 const initialState: AppState = {
-  gameState: "splash",
+  gameState: "pref",
   cardsRemaining: 9,
   cards: mockCards.cards,
   swipeRights: [],
