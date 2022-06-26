@@ -52,7 +52,7 @@ export const mockCards: Cards = {
       category: "Human",
       rarity: "Common",
       size: "1:1",
-      price: 0.0039,
+      price: 0.039,
       index: 3,
     },
     {
@@ -73,7 +73,7 @@ export const mockCards: Cards = {
       category: "Owl",
       rarity: "Rare",
       size: "1:1",
-      price: 1.2,
+      price: 1.23,
       index: 5,
     },
     {
