@@ -42,13 +42,13 @@ const Bubbles = (props: Props) => {
         >
           {cards[i].id}
         </Typography>
-        <div className="currency-box">
+        {/* <div className="currency-box">
           <Typography
-          sx={{fontFamily: "MonumentExtended-Regular", backgroundColor: "white", marginLeft: '65%', marginTop: "20%", paddingRight: 1, position: "absolute", border: 2, borderColor: "grey", borderRadius: 1}}>
+          sx={{fontFamily: "MonumentExtended-Regular", backgroundColor: "white", marginLeft: '65%', marginTop: "20%", paddingRight: 1, border: 2, borderColor: "grey", borderRadius: 1}}>
             <img src={tron} width="20" height="20" alt=""/>
             {cards[i].price} 
           </Typography>
-        </div>
+        </div> */}
         <div className="footer">
           <Typography
             variant="h5"
