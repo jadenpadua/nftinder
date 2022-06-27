@@ -32,7 +32,7 @@ export const mockResults: Results = {
     {
       id: "#5403",
       description:"CryptoDrip Card",
-      priceHistory: [10,20,30, 40, 50],
+      priceHistory: [10,20,30, 40, 0],
       blockChain: "Ethereum",
       fees: "10",
       tokenStandard: "ERC-1155",
