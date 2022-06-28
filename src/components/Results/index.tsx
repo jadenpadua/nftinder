@@ -1,19 +1,29 @@
-import React,{ useContext } from "react";
+import React,{ useContext, useState } from "react";
 import "./styles.less";
 import CardStack from "../CardStack";
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { AppContext } from "../../context/AppContext";
 import { mockCards } from "../../constants/mockCards";
 import { mockResults } from "../../constants/mockResults";
-import { Typography } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 
 const Results: React.FunctionComponent = () => {
   const { state } = useContext(AppContext);
-  const currCard = 1;
+
+  let currCard: number = state.cardsRemaining-1;
+
+  // reset cardStack if looked through all cards
+  if (currCard<0){
+    currCard = state.swipeRights.length-1;
+    state.cardsRemaining = state.swipeRights.length;
+  }
 
   const results = mockResults.results;
   const cards = mockCards.cards;
   const rights: Array<Number> = state.swipeRights;
+  // let counter = 1;
+  // const [count, setCount] = useState(5);
+
   const cardMap = new Map();
   const resultsMap = new Map();
 
@@ -38,6 +48,11 @@ const Results: React.FunctionComponent = () => {
   for (const i in prices){
     data.push({"Year": "Year" + i.toString(), "Price": prices[i]});
   }
+  //
+  // const onButtonClick = () => {
+  //   counter = counter +1; this one doesn't increment
+  //   setCount(prevCount=>prevCount+1); this one does bc component state saved
+  // };
 
 
   return (

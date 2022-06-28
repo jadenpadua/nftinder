@@ -11,9 +11,9 @@ export type AppState = {
 
 const initialState: AppState = {
   gameState: "results",
-  cardsRemaining: 9,
+  cardsRemaining: 3,
   cards: mockCards.cards,
-  swipeRights: [1,2],
+  swipeRights: [1,2,3],
 };
 
 export type Action = {
@@ -38,11 +38,21 @@ const appReducer = (state: AppState, action: Action): AppState => {
       const { dir, index } = action.payload;
 
       if (dir === 1) {
-        return {
-          ...state,
-          cardsRemaining: state.cardsRemaining - 1,
-          swipeRights: [...state.swipeRights, index],
-        };
+        if (state.gameState!="results"){
+          return {
+            ...state,
+            cardsRemaining: state.cardsRemaining - 1,
+            swipeRights: [...state.swipeRights, index],
+          };
+        }
+        else{
+          return {
+            ...state,
+            cardsRemaining: state.cardsRemaining - 1,
+            swipeRights: state.swipeRights,
+          };
+        }
+
       } else {
         return {
           ...state,
